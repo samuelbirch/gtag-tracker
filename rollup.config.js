@@ -12,7 +12,7 @@ export default {
     output: {
         file: (process.env.BUILD === 'production' ? 'dist' : 'examples/assets') + '/gtag-tracker.js',
         name: 'gtagTracker',
-        format: 'iife'
+        format: 'cjs'
     },
     plugins: [
         resolve(),
